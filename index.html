@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/icom-estilos.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="js/codNPS.js"></script>
+    <title>Formulario NPS</title>
+</head>
+<body>
+   <!-- Banner principal -->
+   <img src="img/contacto-banner-desktop.jpg" alt="Formulario de Satisfacción">
+
+   <!-- Opción de selección -->
+   <select class="canalNPS" name="canalNPS">
+      <option value="0">Selecciona la opción</option>
+      <option value="1">Tiendas</option>
+      <option value="2">E-commerce – Página Web</option>
+      <option value="3">Call Center – Ventas Whatsapp</option>
+      <option value="4">Call Center – Servicio al Cliente</option>
+   </select>
+   <br>
+   <br>
+
+   <!-- Medición en tiendas -->
+   <label for="nombre">Nombre completo:</label>
+   <input type="text" id="nombre" name="nombre" size="30" placeholder="Ingresa tu nombre completo"/><br>
+
+   <label for="cedula">Cédula: </label>
+   <input type="text" id="cedula" name="cedula" size="15" placeholder="Cédula"/><br>
+
+   <label for="cedula">Celular: </label>
+   <input type="text" id="celular" name="celular" size="25" placeholder="Digita tu número celular"/><br>
+
+   <label for="cedula">E-mail: </label>
+   <input type="text" id="email" name="email" size="70" placeholder="E-mail"/><br>
+
+   <h4>¿Cómo calificas la asesoría que recibiste en Medipiel?</h4>
+   <span class="icon-emoji-flirt"></span>
+
+   
+   <h4>¿Cómo calificas la experiencia que tuviste en Medipiel?</h4>
+   caras
+
+   <h4>¿De 0 a 10 que tanto recomendarías Medipiel a otras personas, siendo 0 nada recomendada y 10 muy recomendada?</h4>
+   <div class="nps-container">
+      <button class="detractor2" style="background-color: #ff9eae">0</button>
+      <button class="detractor2" style="background-color: #ffafbc">1</button>
+      <button class="detractor2" style="background-color: #ffafbc">2</button>
+      <button class="detractor2" style="background-color: #ffc0cb">3</button>
+      <button class="detractor2" style="background-color: #ffd1d9">4</button>
+      <button class="detractor2" style="background-color: #ffe2e7">5</button>
+      <button class="detractor2">6</button>
+      <button class="passive2">7</button>
+      <button class="passive2">8</button>
+      <button class="promoter2" style="background-color: #adecba">9</button>
+      <button class="promoter2" style="background-color: #5ad974">10</button>
+   </div>
+
+   <span>Si quieres dejarnos algún comentario adicional te puedes contactar con nosotros al (034) 5600406, opción 3, whatsapp 3128174011 opción 3 o a servicioalcliente@medipiel.com.co</span><br><br>
+
+   <!-- Medición en cajas envíos nacionales -->
+   <label for="nombre">Nombre completo:</label>
+   <input type="text" id="nombre" name="nombre" size="30" placeholder="Ingresa tu nombre completo"/><br>
+
+   <label for="cedula">Cédula: </label>
+   <input type="text" id="cedula" name="cedula" size="15" placeholder="Cédula"/><br>
+
+   <label for="cedula">Celular: </label>
+   <input type="text" id="celular" name="celular" size="25" placeholder="Digita tu número celular"/><br>
+
+   <label for="cedula">E-mail: </label>
+   <input type="text" id="email" name="email" size="70" placeholder="E-mail"/><br>
+
+   <h4>¿Qué tan fácil fue hacer tu compra?</h4>
+   caras
+   <h4>¿Cómo calificas la experiencia?</h4>
+   caras
+   <h4>¿De 0 a 10 que tanto recomendarías Medipiel a otras personas, siendo 0 nada recomendada y 10 muy recomendada?</h4>
+   <div class="nps-container">
+      <button class="detractor2" style="background-color: #ff9eae">0</button>
+      <button class="detractor2" style="background-color: #ffafbc">1</button>
+      <button class="detractor2" style="background-color: #ffafbc">2</button>
+      <button class="detractor2" style="background-color: #ffc0cb">3</button>
+      <button class="detractor2" style="background-color: #ffd1d9">4</button>
+      <button class="detractor2" style="background-color: #ffe2e7">5</button>
+      <button class="detractor2">6</button>
+      <button class="passive2">7</button>
+      <button class="passive2">8</button>
+      <button class="promoter2" style="background-color: #adecba">9</button>
+      <button class="promoter2" style="background-color: #5ad974">10</button>
+   </div>
+<br>
+<h4>¿Ya recibiste tu pedido?</h4>
+<input type="radio" id="si" name="fav_language" value="si" onkeyup="funRecibirPedido()">
+<label for="si">Si</label><br>
+<input type="radio" id="no" name="fav_language" value="no">
+<label for="no">No</label><br>
+
+<input type="text" id="x" onkeyup="funRecibirPedido()" /> <br>
+<input type="text" id="y" value="8" /> <br>
+
+Sí, No <!-- Condicional, si dice que si -->
+
+<h4>¿Te llegó tu pedido correcto?</h4>
+caras
+<h4>¿Te llegó tu pedido completo?</h4>
+caras
+<h4>¿Te llegó tu pedido en buen estado?</h4>
+caras
+<h4>¿Recibiste tu pedido en el tiempo acordado? Ciudades Principales: 1-3 días – Resto del país: 2-7 días</h4>
+caras
+
+<span>Si quieres dejarnos algún comentario adicional te puedes contactar con nosotros al (034) 5600406, opción 3, whatsapp 3128174011 opción 3 o a servicioalcliente@medipiel.com.co</span><br><br>
+
+No <!-- Condicional, si dice que si -->
+      <br>
+      <br>
+
+<!-- Medición Bolsas de domicilio – Call center – Ventas Whatsapp -->
+<label for="nombre">Nombre completo:</label>
+<input type="text" id="nombre" name="nombre" size="30" placeholder="Ingresa tu nombre completo"/><br>
+
+<label for="cedula">Cédula: </label>
+<input type="text" id="cedula" name="cedula" size="15" placeholder="Cédula"/><br>
+
+<label for="cedula">Celular: </label>
+<input type="text" id="celular" name="celular" size="25" placeholder="Digita tu número celular"/><br>
+
+<label for="cedula">E-mail: </label>
+<input type="text" id="email" name="email" size="70" placeholder="E-mail"/><br>
+
+<h4>¿Qué tan fácil fue hacer tu compra?</h4>
+caras
+<h4>¿Ya recibiste tu pedido?</h4>
+caras
+
+<h4>¿Ya recibiste tu pedido?</h4>
+Sí, No <!-- Condicional, si dice que si -->
+
+<h4>¿Te llegó tu pedido correcto?</h4>
+caras
+<h4>¿Te llegó tu pedido completo?</h4>
+caras
+<h4>¿Te llegó tu pedido en buen estado?</h4>
+caras
+
+
+      <button>Enviar</button>
+</body>
+</html>
