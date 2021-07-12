@@ -13,17 +13,23 @@ $('button').hover(function(){
    $this.removeClass("detractor-hover passive-hover promoter-hover");
    $prevAll.removeClass("detractor-hover passive-hover promoter-hover");
 });
-console.log("esta cargando")
 
-// Función para mostrar u ocultar el resto de la encuesta de acuerdo
-// a si recibió el pedido
-function funRecibirPedido() {
-   var si = parseFloat(document.getElementById('x').value);
-   var no = parseFloat(document.getElementById('y').value);
-   
-  if (si >= no) {
-    document.getElementById("boton").style.display = "block";
-  } else {
-    document.getElementById("boton").style.display = "none";
+// Función mostrar y ocultar las opciones
+
+function MostrarTiendas(){
+  document.getElementById("encuestaTiendas").style.display = "block";
+}
+
+function OcultarTiendas(){
+  document.getElementById("encuestaTiendas").style.display = "none";
+}
+
+function npsTienda(){
+  var opTiendas = document.getElementById("encuestaTiendas");
+
+  if(opTiendas.style.display == "none"){
+    MostrarTiendas();
+  }else{
+    OcultarTiendas();
   }
 }
