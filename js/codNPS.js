@@ -104,4 +104,7 @@ function npsSAC(){
   }
 }
 
-$('.svg-inject').svgInject();
+$(".btn-primary").on('click touchend', function(e) {
+  $(this).css("color","#0077ff");
+  console.log($(this).attr('name'));
+});

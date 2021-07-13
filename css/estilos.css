@@ -73,7 +73,15 @@ img.bannerPrincipal {
 }
 
 .seccionBotonera .btn-primary {
-  margin: 0 10px 0 10px;
+  margin: 0 30px 0 30px;
+}
+
+.seccionBotonera .btn-primary:hover {
+  color: white !important;
+  -webkit-box-shadow: 0 4px 16px #318aac;
+          box-shadow: 0 4px 16px #318aac;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 img.btnImagen {
@@ -88,7 +96,7 @@ img.btnImagen {
   background: #02a5bf;
   padding: 13px;
   width: 100%;
-  max-width: 300px;
+  max-width: 150px;
   border: none;
   border-radius: 10px;
   font-family: 'Open Sans', sans-serif;
@@ -122,5 +130,26 @@ p {
 
 .npsTiendas, .npsEnviosNacionales, .npsCallWhatsapp, .npsCallSAC {
   display: none;
+}
+
+.btnEnviar {
+  cursor: pointer;
+  background: #02a5bf;
+  padding: 13px;
+  width: 100%;
+  max-width: 150px;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  margin: auto;
+  text-transform: uppercase;
+  color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 /*# sourceMappingURL=estilos.css.map */
