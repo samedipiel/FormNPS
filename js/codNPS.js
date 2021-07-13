@@ -16,11 +16,12 @@ $('button').hover(function(){
 
 // Función mostrar y ocultar las opciones
 
-function MostrarTiendas(){
+// Función para tiendas
+function mostrarTiendas(){
   document.getElementById("encuestaTiendas").style.display = "block";
 }
 
-function OcultarTiendas(){
+function ocultarTiendas(){
   document.getElementById("encuestaTiendas").style.display = "none";
 }
 
@@ -28,8 +29,79 @@ function npsTienda(){
   var opTiendas = document.getElementById("encuestaTiendas");
 
   if(opTiendas.style.display == "none"){
-    MostrarTiendas();
+    mostrarTiendas();
+    ocultarEnviosNacionales();
+    ocultarCallWhatsapp();
+    ocultarSAC();
   }else{
-    OcultarTiendas();
+    ocultarTiendas();
   }
 }
+
+// Función para Envíos Nacionales
+function mostrarEnviosNacionales(){
+  document.getElementById("encuestaEnviosNacionales").style.display = "block";
+}
+
+function ocultarEnviosNacionales(){
+  document.getElementById("encuestaEnviosNacionales").style.display = "none";
+}
+
+function npsEnviosNacionales(){
+  var opTiendas = document.getElementById("encuestaEnviosNacionales");
+
+  if(opTiendas.style.display == "none"){
+    mostrarEnviosNacionales();
+    ocultarTiendas();
+    ocultarCallWhatsapp();
+    ocultarSAC();
+  }else{
+    ocultarEnviosNacionales();
+  }
+}
+
+// Función para ventas por WP
+function mostrarCallWhatsapp(){
+  document.getElementById("encuestaCallWhatsapp").style.display = "block";
+}
+
+function ocultarCallWhatsapp(){
+  document.getElementById("encuestaCallWhatsapp").style.display = "none";
+}
+
+function npsVentasWhatsapp(){
+  var opTiendas = document.getElementById("encuestaCallWhatsapp");
+
+  if(opTiendas.style.display == "none"){
+    mostrarCallWhatsapp();
+    ocultarTiendas();
+    ocultarSAC();
+    ocultarEnviosNacionales();
+  }else{
+    ocultarCallWhatsapp();
+  }
+}
+
+// Función para ventas por SAC
+function mostrarSAC(){
+  document.getElementById("encuestaSAC").style.display = "block";
+}
+
+function ocultarSAC(){
+  document.getElementById("encuestaSAC").style.display = "none";
+}
+
+function npsSAC(){
+  var opTiendas = document.getElementById("encuestaSAC");
+
+  if(opTiendas.style.display == "none"){
+    mostrarSAC();
+    ocultarTiendas();
+    ocultarEnviosNacionales();
+    ocultarCallWhatsapp();
+  }else{
+    ocultarSAC();
+  }
+}
+
+$('.svg-inject').svgInject();

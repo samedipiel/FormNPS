@@ -12,14 +12,31 @@
 </head>
 <body>
    <!-- Banner principal -->
-   <img src="img/contacto-banner-desktop.jpg" alt="Formulario de Satisfacción">
+   <img class="bannerPrincipal" src="img/contacto-banner-desktop.jpg" alt="Formulario de Satisfacción">
    <br>
    <br>
    <!-- Opción de selección -->
-   <input type="submit" value="Tiendas" onClick="npsTienda()">
-   <input type="submit" value="E-commerce – Página Web">
-   <input type="submit" value="Call Center – Ventas Whatsapp">
-   <input type="submit" value="Call Center – Servicio al Cliente">
+   <div class="seccionBotonera">
+      <button class="btn-primary svg-inject" value="Tiendas" onClick="npsTienda()">
+         <img class="btnImagen" src="img/001-shop.svg" /><br>
+         <label for="">tienda</label>
+      </button>
+      
+      <button class="btn-primary" value="E-commerce – Página Web" onClick="npsEnviosNacionales()">
+         <img class="btnImagen" src="img/005-online-shopping.svg" /><br>
+         <label for="">Ecommerce</label>
+      </button>
+
+      <button class="btn-primary" value="Call Center – Ventas Whatsapp" onClick="npsVentasWhatsapp()">
+         <img class="btnImagen" src="img/002-smartphone.svg" /><br>
+         <label for="">Whatsapp</label>
+      </button>
+
+      <button class="btn-primary" value="Call Center – Servicio al Cliente" onClick="npsSAC()">
+         <img class="btnImagen" src="img/003-girl.svg" /><br>
+         <label for="">Call Center</label>
+      </button>
+   </div>
    <br>
    <br>
 
@@ -61,7 +78,7 @@
       <span>Si quieres dejarnos algún comentario adicional te puedes contactar con nosotros al (034) 5600406, opción 3, whatsapp 3128174011 opción 3 o a servicioalcliente@medipiel.com.co</span><br><br>
 </div>
    <!-- Medición en cajas envíos nacionales -->
-<div class="npsEnviosNacionales">
+<div class="npsEnviosNacionales" id="encuestaEnviosNacionales">
       <h3>ENVÍOS NACIONALES</h3><br>
       <label for="nombre">Nombre completo:</label>
       <input type="text" id="nombre" name="nombre" size="30" placeholder="Ingresa tu nombre completo"/><br>
@@ -100,9 +117,6 @@
    <input type="radio" id="no" name="fav_language" value="no">
    <label for="no">No</label><br>
 
-   <input type="text" id="x" onkeyup="funRecibirPedido()" /> <br>
-   <input type="text" id="y" value="8" /> <br>
-
    Sí, No <!-- Condicional, si dice que si -->
 
    <h4>¿Te llegó tu pedido correcto?</h4>
@@ -120,7 +134,7 @@
       <br>
 
 <!-- Medición Bolsas de domicilio – Call center – Ventas Whatsapp -->
-<div class="npsCallWhatsapp">
+<div class="npsCallWhatsapp" id="encuestaCallWhatsapp">
    <h3>ENVÍOS Bolsas de domicilio – Call center – Ventas Whatsapp</h3><br>
    <label for="nombre">Nombre completo:</label>
    <input type="text" id="nombre" name="nombre" size="30" placeholder="Ingresa tu nombre completo"/><br>
@@ -152,7 +166,7 @@
    <br>
 </div>
 <!-- Call Center – Servicio al Cliente -->
-<div class="npsCallSAC">
+<div class="npsCallSAC" id="encuestaSAC">
    <h3>ENVÍOS Call Center – Servicio al Cliente</h3><br>
    <label for="nombre">Nombre completo:</label>
    <input type="text" id="nombre" name="nombre" size="30" placeholder="Ingresa tu nombre completo"/><br>
@@ -192,16 +206,7 @@
    <br>
    <span>Si quieres dejarnos algún comentario adicional te puedes contactar con nosotros al (034) 5600406, opción 3, whatsapp 3128174011 opción 3 o a servicioalcliente@medipiel.com.co</span><br><br>
 <br>
-      <button>Enviar</button>
-      <script>
-         function ocultarOpciones(){
-            $(".npsTiendas").hide();
-            $(".npsEnviosNacionales").hide();
-            $(".npsCallWhatsapp").hide();
-            $(".npsCallSAC").hide();
-         }
-
-         function ocultarOpciones();
-      </script>
+</div>
+      <button class="btn-primary">Enviar</button>
 </body>
 </html>
