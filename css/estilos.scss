@@ -1,4 +1,4 @@
-
+// Código sobre el top de 0 a 10 de los números
 .nps-container {
     display: flex;
         justify-content: space-between;
@@ -44,33 +44,24 @@
     }
 }
 
-img.bannerPrincipal{
+// FIN de código de números
+
+.btnEnviar{
+    cursor: pointer;
+    background: #02a5bf;
+    padding: 13px;
+    width: 100%;
+    max-width: 150px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
     margin: auto;
-    display: flex;
-    justify-content: center;
-}
-
-.seccionBotonera{
+    text-transform: uppercase;
+    color: #fff;
     justify-content: center;
     display: flex;
-
-    .btn-primary{
-    margin: 0 30px 0 30px;
-    }
-
-    .btn-primary:hover{
-        color: rgba(255, 255, 255, 1) !important;
-        box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
-        transition: all 0.2s ease;
-        }
-}
-
-img.btnImagen{
-    width: 100px;
-    height: 100px;
-    fill: white;
-    stroke: #0077ff;
-}
+ }
 
 .btn-primary{
     cursor: pointer;
@@ -93,6 +84,61 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     letter-spacing: 2px;
     line-height: 1.5;
     margin: 1rem 0;
+    color: #636363;
+}
+
+.movimientoEmoji{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    &.hidden{
+            overflow: hidden;
+        }
+        .imgEmojis{
+            width: 48px;
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            transform:translate(0px,0px);
+            -ms-transform:translate(0px,0px); // IE 9 
+            -moz-transform:translate(0px,0px); // Firefox 
+            -webkit-transform:translate(0px,0px); // Safari and Chrome 
+            -o-transform:translate(0px,0px); // Opera 
+            -webkit-transition: all 500ms ease-in-out; // IE 9
+            -moz-transition: all 500ms ease-in-out; // Firefox
+            -ms-transition: all 500ms ease-in-out; // Safari and Chrome 
+            -o-transition: all 500ms ease-in-out; // Opera 
+        }
+        .textEmoji{
+            font-family: 'Open Sans';
+            z-index: -1;
+            display:block;
+            width:100%;
+            text-align:center;
+        }
+        &:hover{
+            .imgEmojis{
+                transform:translate(0px,-10px);
+                -ms-transform:translate(0px,-10px); // IE 9 
+                -moz-transform:translate(0px,-10px); // Firefox 
+                -webkit-transform:translate(0px,-10px); // Safari and Chrome 
+                -o-transform:translate(0px,-10px); // Opera
+            }
+    }
+}
+
+img.bannerPrincipal{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+img.btnImagen{
+    width: 100px;
+    height: 100px;
+    fill: white;
+    stroke: #0077ff;
 }
 
 p {
@@ -101,29 +147,65 @@ p {
     letter-spacing: 1px;
 }
 
-.npsTiendas, .npsEnviosNacionales, .npsCallWhatsapp, .npsCallSAC {
-    margin: 2rem auto;
-    border-radius: 20px;
-    max-width: 950px;
+.seccionBotonera{
+    justify-content: center;
+    display: flex;
+
+    .btn-primary{
+    margin: 0 30px 0 30px;
+    }
+
+    .btn-primary:hover{
+        color: rgba(255, 255, 255, 1) !important;
+        box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+        transition: all 0.2s ease;
+        }
+}
+
+.masInfo{
+    padding-top: 20px;
 }
 
 .npsTiendas, .npsEnviosNacionales, .npsCallWhatsapp, .npsCallSAC {
+    margin: 0.5rem auto;
+    border-radius: 20px;
+    max-width: 950px;
     display: none;
- }
+}
 
- .btnEnviar{
-    cursor: pointer;
-    background: #02a5bf;
-    padding: 13px;
+.textForm{
+    border: 1px solid #aaaaaa;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 10px 0 7px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    box-shadow: none;
+    -webkit-appearance: none;
     width: 100%;
-    max-width: 150px;
-    border: none;
+    height: 36px;
+    color: #636363;
+    letter-spacing: 1px;
+    padding-right: 10px;
+}
+
+.labelForm{
+    color: #636363;
+}
+
+.x-grid-row {
+    padding-bottom: 15px;
+        .x-grid-col-45 {
+            margin-right: 20px;
+        }
+}
+
+.bordeCajas{
+    border: #cccbcb 1px solid;
+    padding: 0px 5px 5px 20px;
     border-radius: 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    margin: auto;
-    text-transform: uppercase;
-    color: #fff;
+}
+
+.cajasCalificacion{
     justify-content: center;
-    display: flex;
- }
+}
