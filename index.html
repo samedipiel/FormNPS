@@ -81,6 +81,7 @@
                   </div>
                </div>
          </div>
+
          <div class="x-grid-col-45 bordeCajas">
             <h4>¿Cómo calificas la experiencia que tuviste en Medipiel?</h4>
             <div class="x-grid-row">
@@ -125,36 +126,82 @@
    <!-- Medición en cajas envíos nacionales -->
 <div class="npsEnviosNacionales" id="encuestaEnviosNacionales">
       <h3>ENVÍOS NACIONALES</h3><br>
-      <label for="nombre">Nombre completo:</label>
-      <input type="text" id="nombre" name="nombre" size="30" placeholder="Ingresa tu nombre completo"/><br>
 
-      <label for="cedula">Cédula: </label>
-      <input type="text" id="cedula" name="cedula" size="15" placeholder="Cédula"/><br>
+      <div class="x-grid-row">
+         <div class="x-grid-col-45">
+            <label class="labelForm" for="nombre">Nombre completo:</label><br>
+            <input class="textForm" type="text" id="nombre" name="nombre" size="30" placeholder="Ingresa tu nombre completo"/><br>
 
-      <label for="cedula">Celular: </label>
-      <input type="text" id="celular" name="celular" size="25" placeholder="Digita tu número celular"/><br>
+            <label class="labelForm" for="cedula">Celular: </label><br>
+            <input class="textForm" type="text" id="celular" name="celular" size="25" placeholder="Digita tu número celular"/><br>
+         </div>
 
-      <label for="cedula">E-mail: </label>
-      <input type="text" id="email" name="email" size="70" placeholder="E-mail"/><br>
+         <div class="x-grid-col-50">
+            <label class="labelForm" for="cedula">Cédula: </label><br>
+            <input class="textForm" type="text" id="cedula" name="cedula" size="15" placeholder="Cédula"/><br>
 
-      <h4>¿Qué tan fácil fue hacer tu compra?</h4>
-      caras
-      <h4>¿Cómo calificas la experiencia?</h4>
-      caras
-      <h4>¿De 0 a 10 que tanto recomendarías Medipiel a otras personas, siendo 0 nada recomendada y 10 muy recomendada?</h4>
-      <div class="nps-container">
-         <button class="detractor2" style="background-color: #ff9eae">0</button>
-         <button class="detractor2" style="background-color: #ffafbc">1</button>
-         <button class="detractor2" style="background-color: #ffafbc">2</button>
-         <button class="detractor2" style="background-color: #ffc0cb">3</button>
-         <button class="detractor2" style="background-color: #ffd1d9">4</button>
-         <button class="detractor2" style="background-color: #ffe2e7">5</button>
-         <button class="detractor2">6</button>
-         <button class="passive2">7</button>
-         <button class="passive2">8</button>
-         <button class="promoter2" style="background-color: #adecba">9</button>
-         <button class="promoter2" style="background-color: #5ad974">10</button>
+            <label class="labelForm" for="cedula">E-mail: </label><br>
+            <input class="textForm" type="text" id="email" name="email" size="70" placeholder="E-mail"/><br>
+         </div>
       </div>
+
+      <div class="x-grid-row cajasCalificacion">
+         <div class="x-grid-col-45 bordeCajas">
+            <h4>¿Qué tan fácil fue hacer tu compra?</h4>
+               <div class="x-grid-row">
+                  <div class="x-grid-col-33 movimientoEmoji hidden">
+                     <img class="imgEmojis" src="img/emojis/caraCorazon.png" alt="">
+                     <div class="textEmoji">Excelente</div>
+                  </div>
+                  <div class="x-grid-col-33 movimientoEmoji hidden">
+                     <img class="imgEmojis" src="img/emojis/caraNormal.png" alt="">
+                     <div class="textEmoji">Bien</div>
+                  </div>
+                  <div class="x-grid-col-33 movimientoEmoji hidden">
+                     <img class="imgEmojis" src="img/emojis/caraTriste.png" alt="">
+                     <div class="textEmoji">Mal</div>
+                  </div>
+               </div>
+         </div>
+
+         <div class="x-grid-col-45 bordeCajas">
+            <h4>¿Cómo calificas la experiencia?</h4>
+            <div class="x-grid-row">
+               <div class="x-grid-col-33 movimientoEmoji hidden">
+                  <img class="imgEmojis" src="img/emojis/caraCorazon.png" alt="">
+                  <div class="textEmoji">Excelente</div>
+               </div>
+               <div class="x-grid-col-33 movimientoEmoji hidden">
+                  <img class="imgEmojis" src="img/emojis/caraNormal.png" alt="">
+                  <div class="textEmoji">Bien</div>
+               </div>
+               <div class="x-grid-col-33 movimientoEmoji hidden">
+                  <img class="imgEmojis" src="img/emojis/caraTriste.png" alt="">
+                  <div class="textEmoji">Mal</div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+            <div class="x-grid-row">
+               <div class="x-grid-col-100 puntajeRecomendar">
+                  <h4>¿De 0 a 10 que tanto recomendarías Medipiel a otras personas, siendo 0 nada recomendada y 10 muy recomendada?</h4>
+                     <div class="nps-container">
+                        <button class="detractor2" style="background-color: #ff9eae">0</button>
+                        <button class="detractor2" style="background-color: #ffafbc">1</button>
+                        <button class="detractor2" style="background-color: #ffafbc">2</button>
+                        <button class="detractor2" style="background-color: #ffc0cb">3</button>
+                        <button class="detractor2" style="background-color: #ffd1d9">4</button>
+                        <button class="detractor2" style="background-color: #ffe2e7">5</button>
+                        <button class="detractor2">6</button>
+                        <button class="passive2">7</button>
+                        <button class="passive2">8</button>
+                        <button class="promoter2" style="background-color: #adecba">9</button>
+                        <button class="promoter2" style="background-color: #5ad974">10</button>
+                     </div>
+               </div>
+            </div>
+
    <br>
    <h4>¿Ya recibiste tu pedido?</h4>
    <input type="radio" id="si" name="fav_language" value="si" onkeyup="funRecibirPedido()">
@@ -164,16 +211,87 @@
 
    Sí, No <!-- Condicional, si dice que si -->
 
-   <h4>¿Te llegó tu pedido correcto?</h4>
-   caras
-   <h4>¿Te llegó tu pedido completo?</h4>
-   caras
-   <h4>¿Te llegó tu pedido en buen estado?</h4>
-   caras
-   <h4>¿Recibiste tu pedido en el tiempo acordado? Ciudades Principales: 1-3 días – Resto del país: 2-7 días</h4>
-   caras
+   <div class="x-grid-row cajasCalificacion">
+      <div class="x-grid-col-45 bordeCajas">
+         <h4>¿Te llegó tu pedido correcto?</h4>
+            <div class="x-grid-row">
+               <div class="x-grid-col-33 movimientoEmoji hidden">
+                  <img class="imgEmojis" src="img/emojis/caraCorazon.png" alt="">
+                  <div class="textEmoji">Excelente</div>
+               </div>
+               <div class="x-grid-col-33 movimientoEmoji hidden">
+                  <img class="imgEmojis" src="img/emojis/caraNormal.png" alt="">
+                  <div class="textEmoji">Bien</div>
+               </div>
+               <div class="x-grid-col-33 movimientoEmoji hidden">
+                  <img class="imgEmojis" src="img/emojis/caraTriste.png" alt="">
+                  <div class="textEmoji">Mal</div>
+               </div>
+            </div>
+      </div>
 
-   <span>Si quieres dejarnos algún comentario adicional te puedes contactar con nosotros al (034) 5600406, opción 3, whatsapp 3128174011 opción 3 o a servicioalcliente@medipiel.com.co</span><br><br>
+      <div class="x-grid-col-45 bordeCajas">
+         <h4>¿Te llegó tu pedido completo?</h4>
+         <div class="x-grid-row">
+            <div class="x-grid-col-33 movimientoEmoji hidden">
+               <img class="imgEmojis" src="img/emojis/caraCorazon.png" alt="">
+               <div class="textEmoji">Excelente</div>
+            </div>
+            <div class="x-grid-col-33 movimientoEmoji hidden">
+               <img class="imgEmojis" src="img/emojis/caraNormal.png" alt="">
+               <div class="textEmoji">Bien</div>
+            </div>
+            <div class="x-grid-col-33 movimientoEmoji hidden">
+               <img class="imgEmojis" src="img/emojis/caraTriste.png" alt="">
+               <div class="textEmoji">Mal</div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="x-grid-row cajasCalificacion">
+      <div class="x-grid-col-45 bordeCajas">
+         <h4>¿Te llegó tu pedido en buen estado?</h4>
+            <div class="x-grid-row">
+               <div class="x-grid-col-33 movimientoEmoji hidden">
+                  <img class="imgEmojis" src="img/emojis/caraCorazon.png" alt="">
+                  <div class="textEmoji">Excelente</div>
+               </div>
+               <div class="x-grid-col-33 movimientoEmoji hidden">
+                  <img class="imgEmojis" src="img/emojis/caraNormal.png" alt="">
+                  <div class="textEmoji">Bien</div>
+               </div>
+               <div class="x-grid-col-33 movimientoEmoji hidden">
+                  <img class="imgEmojis" src="img/emojis/caraTriste.png" alt="">
+                  <div class="textEmoji">Mal</div>
+               </div>
+            </div>
+      </div>
+
+      <div class="x-grid-col-45 bordeCajas">
+         <h4>¿Recibiste tu pedido en el tiempo acordado?</h4>
+         <div class="x-grid-row">
+            <div class="x-grid-col-33 movimientoEmoji hidden">
+               <img class="imgEmojis" src="img/emojis/caraCorazon.png" alt="">
+               <div class="textEmoji">Excelente</div>
+            </div>
+            <div class="x-grid-col-33 movimientoEmoji hidden">
+               <img class="imgEmojis" src="img/emojis/caraNormal.png" alt="">
+               <div class="textEmoji">Bien</div>
+            </div>
+            <div class="x-grid-col-33 movimientoEmoji hidden">
+               <img class="imgEmojis" src="img/emojis/caraTriste.png" alt="">
+               <div class="textEmoji">Mal</div>
+            </div>
+            <div class="mensajeInformativo">Ciudades Principales: 1-3 días – Resto del país: 2-7 días</div>
+         </div>
+      </div>
+   </div>
+
+   <div class="masInfo">
+      <span>Si quieres dejarnos algún comentario adicional te puedes contactar con nosotros al (034) 5600406, opción
+         3, whatsapp 3128174011 opción 3 o a servicioalcliente@medipiel.com.co</span>
+   </div>
 </div>
       <br>
       <br>
@@ -181,58 +299,184 @@
 <!-- Medición Bolsas de domicilio – Call center – Ventas Whatsapp -->
 <div class="npsCallWhatsapp" id="encuestaCallWhatsapp">
    <h3>ENVÍOS Bolsas de domicilio – Call center – Ventas Whatsapp</h3><br>
-   <label for="nombre">Nombre completo:</label>
-   <input type="text" id="nombre" name="nombre" size="30" placeholder="Ingresa tu nombre completo"/><br>
 
-   <label for="cedula">Cédula: </label>
-   <input type="text" id="cedula" name="cedula" size="15" placeholder="Cédula"/><br>
+   <div class="x-grid-row">
+      <div class="x-grid-col-45">
+         <label class="labelForm" for="nombre">Nombre completo:</label><br>
+         <input class="textForm" type="text" id="nombre" name="nombre" size="30" placeholder="Ingresa tu nombre completo"/><br>
 
-   <label for="cedula">Celular: </label>
-   <input type="text" id="celular" name="celular" size="25" placeholder="Digita tu número celular"/><br>
+         <label class="labelForm" for="cedula">Celular: </label><br>
+         <input class="textForm" type="text" id="celular" name="celular" size="25" placeholder="Digita tu número celular"/><br>
+      </div>
 
-   <label for="cedula">E-mail: </label>
-   <input type="text" id="email" name="email" size="70" placeholder="E-mail"/><br>
+      <div class="x-grid-col-50">
+         <label class="labelForm" for="cedula">Cédula: </label><br>
+         <input class="textForm" type="text" id="cedula" name="cedula" size="15" placeholder="Cédula"/><br>
 
-   <h4>¿Qué tan fácil fue hacer tu compra?</h4>
-   caras
-   <h4>¿Ya recibiste tu pedido?</h4>
-   caras
+         <label class="labelForm" for="cedula">E-mail: </label><br>
+         <input class="textForm" type="text" id="email" name="email" size="70" placeholder="E-mail"/><br>
+      </div>
+   </div>
+
+
+   <div class="x-grid-row cajasCalificacion">
+      <div class="x-grid-col-45 bordeCajas">
+         <h4>¿Qué tan fácil fue hacer tu compra?</h4>
+            <div class="x-grid-row">
+               <div class="x-grid-col-33 movimientoEmoji hidden">
+                  <img class="imgEmojis" src="img/emojis/caraCorazon.png" alt="">
+                  <div class="textEmoji">Excelente</div>
+               </div>
+               <div class="x-grid-col-33 movimientoEmoji hidden">
+                  <img class="imgEmojis" src="img/emojis/caraNormal.png" alt="">
+                  <div class="textEmoji">Bien</div>
+               </div>
+               <div class="x-grid-col-33 movimientoEmoji hidden">
+                  <img class="imgEmojis" src="img/emojis/caraTriste.png" alt="">
+                  <div class="textEmoji">Mal</div>
+               </div>
+            </div>
+      </div>
+
+      <div class="x-grid-col-45 bordeCajas">
+         <h4>¿Ya recibiste tu pedido?</h4>
+         <div class="x-grid-row">
+            <div class="x-grid-col-33 movimientoEmoji hidden">
+               <img class="imgEmojis" src="img/emojis/caraCorazon.png" alt="">
+               <div class="textEmoji">Excelente</div>
+            </div>
+            <div class="x-grid-col-33 movimientoEmoji hidden">
+               <img class="imgEmojis" src="img/emojis/caraNormal.png" alt="">
+               <div class="textEmoji">Bien</div>
+            </div>
+            <div class="x-grid-col-33 movimientoEmoji hidden">
+               <img class="imgEmojis" src="img/emojis/caraTriste.png" alt="">
+               <div class="textEmoji">Mal</div>
+            </div>
+         </div>
+      </div>
+   </div>
+
 
    <h4>¿Ya recibiste tu pedido?</h4>
    Sí, No <!-- Condicional, si dice que si -->
 
-   <h4>¿Te llegó tu pedido correcto?</h4>
-   caras
-   <h4>¿Te llegó tu pedido completo?</h4>
-   caras
-   <h4>¿Te llegó tu pedido en buen estado?</h4>
-   caras
-   <br>
-   <br>
+
+   
+   <div class="x-grid-row cajasCalificacion">
+      <div class="x-grid-col-45 bordeCajas">
+         <h4>¿Te llegó tu pedido correcto?</h4>
+            <div class="x-grid-row">
+               <div class="x-grid-col-33 movimientoEmoji hidden">
+                  <img class="imgEmojis" src="img/emojis/caraCorazon.png" alt="">
+                  <div class="textEmoji">Excelente</div>
+               </div>
+               <div class="x-grid-col-33 movimientoEmoji hidden">
+                  <img class="imgEmojis" src="img/emojis/caraNormal.png" alt="">
+                  <div class="textEmoji">Bien</div>
+               </div>
+               <div class="x-grid-col-33 movimientoEmoji hidden">
+                  <img class="imgEmojis" src="img/emojis/caraTriste.png" alt="">
+                  <div class="textEmoji">Mal</div>
+               </div>
+            </div>
+      </div>
+
+      <div class="x-grid-col-45 bordeCajas">
+         <h4>¿Te llegó tu pedido completo?</h4>
+         <div class="x-grid-row">
+            <div class="x-grid-col-33 movimientoEmoji hidden">
+               <img class="imgEmojis" src="img/emojis/caraCorazon.png" alt="">
+               <div class="textEmoji">Excelente</div>
+            </div>
+            <div class="x-grid-col-33 movimientoEmoji hidden">
+               <img class="imgEmojis" src="img/emojis/caraNormal.png" alt="">
+               <div class="textEmoji">Bien</div>
+            </div>
+            <div class="x-grid-col-33 movimientoEmoji hidden">
+               <img class="imgEmojis" src="img/emojis/caraTriste.png" alt="">
+               <div class="textEmoji">Mal</div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <div class="x-grid-row cajasCalificacion">
+      <div class="x-grid-col-45 bordeCajas">
+         <h4>¿Te llegó tu pedido en buen estado?</h4>
+            <div class="x-grid-row">
+               <div class="x-grid-col-33 movimientoEmoji hidden">
+                  <img class="imgEmojis" src="img/emojis/caraCorazon.png" alt="">
+                  <div class="textEmoji">Excelente</div>
+               </div>
+               <div class="x-grid-col-33 movimientoEmoji hidden">
+                  <img class="imgEmojis" src="img/emojis/caraNormal.png" alt="">
+                  <div class="textEmoji">Bien</div>
+               </div>
+               <div class="x-grid-col-33 movimientoEmoji hidden">
+                  <img class="imgEmojis" src="img/emojis/caraTriste.png" alt="">
+                  <div class="textEmoji">Mal</div>
+               </div>
+            </div>
+      </div>
+   </div>
+   <div class="masInfo">
+      <span>Si quieres dejarnos algún comentario adicional te puedes contactar con nosotros al (034) 5600406, opción
+         3, whatsapp 3128174011 opción 3 o a servicioalcliente@medipiel.com.co</span>
+   </div>
 </div>
 <!-- Call Center – Servicio al Cliente -->
 <div class="npsCallSAC" id="encuestaSAC">
    <h3>ENVÍOS Call Center – Servicio al Cliente</h3><br>
-   <label for="nombre">Nombre completo:</label>
-   <input type="text" id="nombre" name="nombre" size="30" placeholder="Ingresa tu nombre completo"/><br>
 
-   <label for="cedula">Cédula: </label>
-   <input type="text" id="cedula" name="cedula" size="15" placeholder="Cédula"/><br>
+   <div class="x-grid-row">
+      <div class="x-grid-col-45">
+         <label class="labelForm" for="nombre">Nombre completo:</label><br>
+         <input class="textForm" type="text" id="nombre" name="nombre" size="30" placeholder="Ingresa tu nombre completo"/><br>
 
-   <label for="cedula">Celular: </label>
-   <input type="text" id="celular" name="celular" size="25" placeholder="Digita tu número celular"/><br>
+         <label class="labelForm" for="cedula">Celular: </label><br>
+         <input class="textForm" type="text" id="celular" name="celular" size="25" placeholder="Digita tu número celular"/><br>
+      </div>
 
-   <label for="cedula">E-mail: </label>
-   <input type="text" id="email" name="email" size="70" placeholder="E-mail"/><br>
+      <div class="x-grid-col-50">
+         <label class="labelForm" for="cedula">Cédula: </label><br>
+         <input class="textForm" type="text" id="cedula" name="cedula" size="15" placeholder="Cédula"/><br>
 
-   <h4>¿Cuál es su nivel de satisfacción general con la atención recibida en esta interacción?</h4>
-   caras
+         <label class="labelForm" for="cedula">E-mail: </label><br>
+         <input class="textForm" type="text" id="email" name="email" size="70" placeholder="E-mail"/><br>
+      </div>
+   </div>
 
-   <h4>¿Consideras que tu consulta fue resuelta?</h4>
-   <input type="radio" id="si" name="fav_language" value="si" onkeyup="funRecibirPedido()">
-   <label for="si">Si</label><br>
-   <input type="radio" id="no" name="fav_language" value="no">
-   <label for="no">No</label><br>
+   <div class="x-grid-row cajasCalificacion">
+      <div class="x-grid-col-45 bordeCajas">
+         <h4>¿Cuál es su nivel de satisfacción general con la atención recibida en esta interacción?</h4>
+            <div class="x-grid-row">
+               <div class="x-grid-col-33 movimientoEmoji hidden">
+                  <img class="imgEmojis" src="img/emojis/caraCorazon.png" alt="">
+                  <div class="textEmoji">Excelente</div>
+               </div>
+               <div class="x-grid-col-33 movimientoEmoji hidden">
+                  <img class="imgEmojis" src="img/emojis/caraNormal.png" alt="">
+                  <div class="textEmoji">Bien</div>
+               </div>
+               <div class="x-grid-col-33 movimientoEmoji hidden">
+                  <img class="imgEmojis" src="img/emojis/caraTriste.png" alt="">
+                  <div class="textEmoji">Mal</div>
+               </div>
+            </div>
+      </div>
+
+      <div class="x-grid-col-45 bordeCajas">
+         <h4>¿Consideras que tu consulta fue resuelta?</h4>
+         <input type="radio" id="si" name="fav_language" value="si" onkeyup="funRecibirPedido()">
+         <label for="si">Si</label><br>
+
+         <input type="radio" id="no" name="fav_language" value="no">
+         <label for="no">No</label><br>
+      </div>
+   </div>
+
    <br>
    <h4>¿De 0 a 10 que tanto recomendarías Medipiel a otras personas, siendo 0 nada recomendada y 10 muy recomendada?</h4>
    <div class="nps-container">
@@ -248,9 +492,10 @@
       <button class="promoter2" style="background-color: #adecba">9</button>
       <button class="promoter2" style="background-color: #5ad974">10</button>
    </div>
-   <br>
-   <span>Si quieres dejarnos algún comentario adicional te puedes contactar con nosotros al (034) 5600406, opción 3, whatsapp 3128174011 opción 3 o a servicioalcliente@medipiel.com.co</span><br><br>
-<br>
+   <div class="masInfo">
+      <span>Si quieres dejarnos algún comentario adicional te puedes contactar con nosotros al (034) 5600406, opción
+         3, whatsapp 3128174011 opción 3 o a servicioalcliente@medipiel.com.co</span>
+   </div>
 </div>
       <button class="btnEnviar">Enviar</button>
 </body>
