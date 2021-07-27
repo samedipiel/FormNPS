@@ -7,13 +7,14 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/icom-estilos.css">
     <link rel="stylesheet" href="https://www.medipiel.com.co/files/main.chunk.css">
+    <link rel="stylesheet" href="https://www.medipiel.com.co/files/medipiel-global-styles.css"/>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="js/codNPS.js"></script>
     <title>Formulario NPS</title>
 </head>
 <body>
    <!-- Banner principal -->
-   <img class="bannerPrincipal" src="img/contacto-banner-desktop.jpg" alt="Formulario de Satisfacción">
+   <img class="bannerPrincipal" src="img/BANNER-ENCUESTA-SATISFACCION.jpg" alt="Formulario de Satisfacción">
    <br>
    <br>
    <!-- Opción de selección -->
@@ -204,13 +205,12 @@
 
    <br>
    <h4>¿Ya recibiste tu pedido?</h4>
-   <input type="radio" id="si" name="fav_language" value="si" onkeyup="funRecibirPedido()">
+   <input type="radio" id="si" name="fav_language" value="si" onclick="mostrarRecibioPedido()">
    <label for="si">Si</label><br>
-   <input type="radio" id="no" name="fav_language" value="no">
+   <input type="radio" id="no" name="fav_language" value="no" onclick="ocultarRecibioPedido()">
    <label for="no">No</label><br>
 
-   Sí, No <!-- Condicional, si dice que si -->
-
+<div id="llegoPedido">
    <div class="x-grid-row cajasCalificacion">
       <div class="x-grid-col-45 bordeCajas">
          <h4>¿Te llegó tu pedido correcto?</h4>
@@ -287,7 +287,7 @@
          </div>
       </div>
    </div>
-
+</div>
    <div class="masInfo">
       <span>Si quieres dejarnos algún comentario adicional te puedes contactar con nosotros al (034) 5600406, opción
          3, whatsapp 3128174011 opción 3 o a servicioalcliente@medipiel.com.co</span>
@@ -339,7 +339,7 @@
       </div>
 
       <div class="x-grid-col-45 bordeCajas">
-         <h4>¿Ya recibiste tu pedido?</h4>
+         <h4>¿Cómo calificas la experiencia?</h4>
          <div class="x-grid-row">
             <div class="x-grid-col-33 movimientoEmoji hidden">
                <img class="imgEmojis" src="img/emojis/caraCorazon.png" alt="">
@@ -359,10 +359,13 @@
 
 
    <h4>¿Ya recibiste tu pedido?</h4>
-   Sí, No <!-- Condicional, si dice que si -->
+   <input type="radio" id="si" name="fav_language" value="si" onclick="mostrarRecibioPedidoWP()">
+   <label for="si">Si</label><br>
+   <input type="radio" id="no" name="fav_language" value="no" onclick="ocultarRecibioPedidoWP()">
+   <label for="no">No</label><br>
 
 
-   
+<div id="llegoPedidoWhatsapp">
    <div class="x-grid-row cajasCalificacion">
       <div class="x-grid-col-45 bordeCajas">
          <h4>¿Te llegó tu pedido correcto?</h4>
@@ -420,7 +423,28 @@
                </div>
             </div>
       </div>
+
+      <div class="x-grid-col-45 bordeCajas">
+         <h4>¿Recibiste tu pedido en el tiempo acordado?</h4>
+         <div class="x-grid-row">
+            <div class="x-grid-col-33 movimientoEmoji hidden">
+               <img class="imgEmojis" src="img/emojis/caraCorazon.png" alt="">
+               <div class="textEmoji">Excelente</div>
+            </div>
+            <div class="x-grid-col-33 movimientoEmoji hidden">
+               <img class="imgEmojis" src="img/emojis/caraNormal.png" alt="">
+               <div class="textEmoji">Bien</div>
+            </div>
+            <div class="x-grid-col-33 movimientoEmoji hidden">
+               <img class="imgEmojis" src="img/emojis/caraTriste.png" alt="">
+               <div class="textEmoji">Mal</div>
+            </div>
+            <div class="mensajeInformativo">En la misma ciudad: 24 horas, ciudades Principales: 1-3 días – Resto del país: 2-7 días</div>
+         </div>
+      </div>
    </div>
+</div>
+
    <div class="masInfo">
       <span>Si quieres dejarnos algún comentario adicional te puedes contactar con nosotros al (034) 5600406, opción
          3, whatsapp 3128174011 opción 3 o a servicioalcliente@medipiel.com.co</span>
@@ -469,7 +493,7 @@
 
       <div class="x-grid-col-45 bordeCajas">
          <h4>¿Consideras que tu consulta fue resuelta?</h4>
-         <input type="radio" id="si" name="fav_language" value="si" onkeyup="funRecibirPedido()">
+         <input type="radio" id="si" name="fav_language" value="si">
          <label for="si">Si</label><br>
 
          <input type="radio" id="no" name="fav_language" value="no">

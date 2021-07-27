@@ -66,9 +66,9 @@
 .btn-primary{
     cursor: pointer;
     background: #02a5bf;
-    padding: 13px;
+    padding: 10px;
     width: 100%;
-    max-width: 150px;
+    max-width: 112px;
     border: none;
     border-radius: 10px;
     font-family: 'Open Sans', sans-serif;
@@ -132,11 +132,12 @@ img.bannerPrincipal{
     margin: auto;
     display: flex;
     justify-content: center;
+    width: 100%;
 }
 
 img.btnImagen{
-    width: 100px;
-    height: 100px;
+    width: 48px;
+    height: 48px;
     fill: white;
     stroke: #0077ff;
 }
@@ -160,6 +161,10 @@ p {
         box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
         transition: all 0.2s ease;
         }
+    label{
+        font-size: 12px;
+        font-weight: 400;
+    }
 }
 
 .masInfo{
@@ -215,3 +220,34 @@ p {
     font-size: 13px;
     font-weight: 500;
 }
+
+#llegoPedido, #llegoPedidoWhatsapp{
+    display: none;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .seccionBotonera{
+        justify-content: center;
+        display: block;
+        
+    
+        .btn-primary{
+        margin: 0 5px 0 5px;
+        }
+    
+        .btn-primary:hover{
+            color: rgba(255, 255, 255, 1) !important;
+            box-shadow: 0 4px 16px rgba(49, 138, 172, 1);
+            transition: all 0.2s ease;
+            }
+    }
+
+    img.btnImagen {
+        width: 50px;
+        height: 50px;
+        fill: white;
+        stroke: #0077ff;
+    }
+
+  }

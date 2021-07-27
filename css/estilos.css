@@ -77,9 +77,9 @@
 .btn-primary {
   cursor: pointer;
   background: #02a5bf;
-  padding: 13px;
+  padding: 10px;
   width: 100%;
-  max-width: 150px;
+  max-width: 112px;
   border: none;
   border-radius: 10px;
   font-family: 'Open Sans', sans-serif;
@@ -150,11 +150,12 @@ img.bannerPrincipal {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 img.btnImagen {
-  width: 100px;
-  height: 100px;
+  width: 48px;
+  height: 48px;
   fill: white;
   stroke: #0077ff;
 }
@@ -185,6 +186,11 @@ p {
           box-shadow: 0 4px 16px #318aac;
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
+}
+
+.seccionBotonera label {
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .masInfo {
@@ -243,5 +249,35 @@ p {
   padding-top: 18px;
   font-size: 13px;
   font-weight: 500;
+}
+
+#llegoPedido, #llegoPedidoWhatsapp {
+  display: none;
+  padding-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .seccionBotonera {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: block;
+  }
+  .seccionBotonera .btn-primary {
+    margin: 0 5px 0 5px;
+  }
+  .seccionBotonera .btn-primary:hover {
+    color: white !important;
+    -webkit-box-shadow: 0 4px 16px #318aac;
+            box-shadow: 0 4px 16px #318aac;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  img.btnImagen {
+    width: 50px;
+    height: 50px;
+    fill: white;
+    stroke: #0077ff;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
