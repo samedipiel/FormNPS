@@ -108,3 +108,21 @@ $(".btn-primary").on('click touchend', function(e) {
   $(this).css("color","#0077ff");
   console.log($(this).attr('name'));
 });
+
+// Función para LlegoPedido
+function mostrarRecibioPedido(){
+  document.getElementById("llegoPedido").style.display = "block";
+}
+
+function ocultarRecibioPedido(){
+  document.getElementById("llegoPedido").style.display = "none";
+}
+
+// Función para LlegoPedidoWP
+function mostrarRecibioPedidoWP(){
+  document.getElementById("llegoPedidoWhatsapp").style.display = "block";
+}
+
+function ocultarRecibioPedidoWP(){
+  document.getElementById("llegoPedidoWhatsapp").style.display = "none";
+}
