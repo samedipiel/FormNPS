@@ -111,7 +111,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
             -o-transition: all 500ms ease-in-out; // Opera 
         }
         .textEmoji{
-            font-family: 'Open Sans';
+            // font-family: 'Open Sans';
             z-index: -1;
             display:block;
             width:100%;
@@ -167,8 +167,8 @@ p {
         transition: all 0.2s ease;
         }
     label{
-        font-size: 12px;
-        font-weight: 400;
+        font-size: 13px;
+        font-weight: 600;
     }
 }
 
@@ -218,7 +218,15 @@ p {
 
 .cajasCalificacion{
     justify-content: center;
+    flex-wrap: nowrap !important;
 }
+
+.cajaMenu{
+        justify-content: center;
+        flex-wrap: nowrap !important;
+        width: 45%;
+    }
+
 
 .mensajeInformativo{
     padding-top: 18px;
@@ -260,6 +268,8 @@ input[type="radio"]{
             display: inline-block;
             vertical-align: top;
             width: 45%;
+            text-align: center;
+
         }
     
         .btn-primary:hover{

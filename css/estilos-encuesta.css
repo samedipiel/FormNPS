@@ -127,7 +127,6 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .movimientoEmoji .textEmoji {
-  font-family: 'Open Sans';
   z-index: -1;
   display: block;
   width: 100%;
@@ -193,8 +192,8 @@ p {
 }
 
 .seccionBotonera label {
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .masInfo {
@@ -247,6 +246,17 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+}
+
+.cajaMenu {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  width: 45%;
 }
 
 .mensajeInformativo {
@@ -290,6 +300,7 @@ label {
     display: inline-block;
     vertical-align: top;
     width: 45%;
+    text-align: center;
   }
   .seccionBotonera .btn-primary:hover {
     color: white !important;
@@ -319,4 +330,4 @@ label {
     cursor: pointer;
   }
 }
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=estilos-encuesta.css.map */
