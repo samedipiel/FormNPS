@@ -141,6 +141,24 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   -o-transform: translate(0px, -10px);
 }
 
+.contenedor-formulario-1 {
+  width: 80%;
+  margin: 0 auto 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedor-formulario-1 .x-grid-row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenedor-formulario-1 .x-grid-col-50 {
+  padding: 10px;
+}
+
 .movimientoEmoji > input:checked + label {
   color: #41b3c8;
 }
@@ -180,7 +198,8 @@ p {
 }
 
 .seccionBotonera .btn-primary {
-  margin: 0 30px 0 30px;
+  margin: 0 15px;
+  text-align: center;
 }
 
 .seccionBotonera .btn-primary:hover {
@@ -286,6 +305,14 @@ label {
   border-radius: 2px;
 }
 
+.confirmacion__pedido label {
+  padding: 5px 10px;
+  margin: 5px 0px;
+  display: block;
+  width: 5%;
+  text-align: center;
+}
+
 @media screen and (max-width: 768px) {
   .seccionBotonera {
     -webkit-box-pack: center;
@@ -300,7 +327,6 @@ label {
     display: inline-block;
     vertical-align: top;
     width: 45%;
-    text-align: center;
   }
   .seccionBotonera .btn-primary:hover {
     color: white !important;

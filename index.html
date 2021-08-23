@@ -14,28 +14,32 @@
 </head>
 <body>
    <!-- Banner principal -->
-   <img class="bannerPrincipal" src="/arquivos/BANNER-ENCUESTA-SATISFACCION.jpg" alt="Formulario de Satisfacción">
+   <div class="banner-principal">
+      <picture>
+          <source media="(min-width:768px)" srcset="/arquivos/BANNER-ENCUESTA-SATISFACCION.jpg" style="width:100%;" /> <!--Desktop*/-->
+          <img src="/arquivos/BANNER-ENCUESTA-SATISFACCION.jpg" alt="Encuesta" style="width:100%;" /> <!--Mobile-->
+      </picture>
+  </div>
    <br>
-   <br>
+   <div class="contenedor-formulario-1">
+      <div class="x-grid-row">
+         <div class="x-grid-col-45">
+            <label class="labelForm" for="nombre">Nombre completo:</label><br>
+            <input class="textForm" type="text" id="nombre" name="nombre" size="30" placeholder="Ingresa tu nombre completo" required/><br>
 
-   <div class="x-grid-row">
-      <div class="x-grid-col-45">
-         <label class="labelForm" for="nombre">Nombre completo:</label><br>
-         <input class="textForm" type="text" id="nombre" name="nombre" size="30" placeholder="Ingresa tu nombre completo"/><br>
+            <label class="labelForm" for="cedula">Celular: </label><br>
+            <input class="textForm" type="text" id="celular" name="celular" size="25" placeholder="Digita tu número celular" required/><br>
+         </div>
 
-         <label class="labelForm" for="cedula">Celular: </label><br>
-         <input class="textForm" type="text" id="celular" name="celular" size="25" placeholder="Digita tu número celular"/><br>
-      </div>
+         <div class="x-grid-col-50">
+            <label class="labelForm" for="cedula">Cédula: </label><br>
+            <input class="textForm" type="text" id="cedula" name="cedula" size="15" placeholder="Cédula" required/><br>
 
-      <div class="x-grid-col-50">
-         <label class="labelForm" for="cedula">Cédula: </label><br>
-         <input class="textForm" type="text" id="cedula" name="cedula" size="15" placeholder="Cédula"/><br>
-
-         <label class="labelForm" for="cedula">E-mail: </label><br>
-         <input class="textForm" type="text" id="email" name="email" size="70" placeholder="E-mail"/><br>
+            <label class="labelForm" for="cedula">E-mail: </label><br>
+            <input class="textForm" type="text" id="email" name="email" size="70" placeholder="E-mail" required/><br>
+         </div>
       </div>
    </div>
-
 
    <!-- Opción de selección -->
    <div class="seccionBotonera">
