@@ -21,22 +21,23 @@
       </picture>
   </div>
    <br>
+   <form id="dcForm" name="dcForm"  action="javascript:formValidate();" method="post">
    <div class="contenedor-formulario-1">
       <div class="x-grid-row">
          <div class="x-grid-col-45">
             <label class="labelForm" for="nombre">Nombre completo:</label><br>
-            <input class="textForm" type="text" id="nombre" name="nombre" size="30" placeholder="Ingresa tu nombre completo" required/><br>
+            <input tabindex="1" class="textForm" type="text" id="nombre" name="nombre" size="30" placeholder="Ingresa tu nombre completo" required><br>
 
-            <label class="labelForm" for="cedula">Celular: </label><br>
-            <input class="textForm" type="text" id="celular" name="celular" size="25" placeholder="Digita tu número celular" required/><br>
+            <label class="labelForm" for="cedula">Cédula: </label><br>
+            <input tabindex="2" class="textForm" type="text" id="cedula" name="cedula" size="15" placeholder="Cédula" required><br>
          </div>
 
          <div class="x-grid-col-50">
-            <label class="labelForm" for="cedula">Cédula: </label><br>
-            <input class="textForm" type="text" id="cedula" name="cedula" size="15" placeholder="Cédula" required/><br>
+            <label class="labelForm" for="cedula">Celular: </label><br>
+            <input tabindex="3" class="textForm" type="text" id="celular" name="celular" size="25" placeholder="Digita tu número celular" required><br>
 
             <label class="labelForm" for="cedula">E-mail: </label><br>
-            <input class="textForm" type="text" id="email" name="email" size="70" placeholder="E-mail" required/><br>
+            <input tabindex="4" class="textForm" type="text" id="email" name="email" size="70" placeholder="E-mail" required><br>
          </div>
       </div>
    </div>
@@ -67,15 +68,24 @@
                         <img class="btnImagen" src="/arquivos/002-smartphone.png" /><br>
                         <div class="textEmoji">Whatsapp</div>
                      </label>
-                  </div>
-                  <div class="x-grid-col-25 movimientoEmoji hidden btn-primary">
-                     <input type="radio" id="CallCenter" name="canal" value="CallCenter" onClick="npsSAC()">
-                     <label for="CallCenter">
-                        <img class="btnImagen" src="/arquivos/003-girl.png" /><br>
-                        <div class="textEmoji">CallCenter</div>
-                     </label>
-                  </div>
-            </div>
+               </div>
+               <div class="x-grid-col-25 movimientoEmoji hidden btn-primary">
+                  <input type="radio" id="CallCenter" name="canal" value="CallCenter" onClick="npsSAC()">
+                  <label for="CallCenter">
+                     <img class="btnImagen" src="/arquivos/003-girl.png" /><br>
+                     <div class="textEmoji">CallCenter</div>
+                  </label>
+               </div>
+               <div class="x-grid-col-25 movimientoEmoji hidden btn-primary btn-Pqrs">
+                  <input type="radio" id="pqrs" name="canal" value="pqrs">
+                  <label for="pqrs">
+                     <a href="https://zfrmz.com/mwWUlrUhHu05q7Um39as" target="_blank">
+                        <img class="btnImagen" src="/arquivos/001-contract.png" /><br>
+                        <div class="labelPqrs">PQR's</div>
+                     </a>
+                  </label>
+               </div>
+         </div>
    </div>
    <br>
    <!-- FIN BOTONES CANALES -->
@@ -793,19 +803,81 @@
          3, whatsapp 3128174011 opción 3 o a servicioalcliente@medipiel.com.co</span>
    </div>
 </div>
-   <div align="center"><input class="btn btn-primary btn-lg btn-block btnEnviar" type="submit" value="Enviar Datos" id="btn__Enviar"></div>
+<div class="x-grid-row">
+   <div class="x-grid-col-100">
+      <div class="opt-in">
+         <input class="form-check-input" type="checkbox" name="AceptaUsoDatos" id="AceptaUsoDatos" required="required" />
+            <label class="form-check-label" for="checkbox">
+                     Acepto <a href="/info/terminos-y-condiciones">Politica de uso de datos (Ley Habeas Data), términos y condiciones.</a>
+            </label>
+      </div>
+   </div>
+</div>
 
+   <div align="center"><input class="btn btn-lg btn-block btnEnviar" type="submit" value="Enviar Datos" id="btn__Enviar"></div>
+
+   <div class="msc-alert" id="co_message_contactCreated">
+      <div class="msc-alert-body">
+        <strong>¡REGISTRO EXITOSO!</strong> Los datos fueron enviados correctamente.
+      </div>
+    </div>
+
+    
+    <div class="msc-alert" id="co_message_errorCreated">
+      <div class="msc-alert-body">
+        <strong>¡ERROR EN REGISTRO!</strong> Revisa los datos ingresados e intenta nuevamente.
+      </div>
+    </div>
+
+</form>
 </body>
 <script type="text/javascript">
 
+ResetMessages();
+
+function formValidate(){
+
+let isFormValidate = true;
+
+if (document.dcForm.nombre.value == 0 || document.dcForm.nombre.value == undefined){
+   document.dcForm.nombre.focus();
+   isFormValidate = false;
+}
+
+if (document.dcForm.cedula.value == 0 || document.dcForm.cedula.value == undefined){
+   document.dcForm.cedula.focus();
+   isFormValidate = false;
+}
+
+if (document.dcForm.celular.value == 0 || document.dcForm.email.value == undefined){
+   document.dcForm.celular.focus();
+   isFormValidate = false;
+}
+
+
+if(isFormValidate){
+   CrearEncuesta();
+}else{
+    alert("Faltan campos por diligenciar");
+}
+
+return false;
+}
+
 $('#btn__Enviar').click(function(){
-    CrearEncuesta()
+      if(isFormValidate){
+         CrearEncuesta();
+      }else{
+         alert("Faltan campos por diligenciar");
+      }
+     /* if (document.getElementById.name.AceptaUsoDatos == 0){
+         
+      }else{
+         CrearEncuesta();
+      }*/
   })
 
-console.log("Hola Diego");
-
 function CrearEncuesta() {
-
 $("#co_message_loader_small").show();
 
 let nombre = $('#nombre').val();
@@ -888,6 +960,12 @@ const dc_url = "/api/dataentities/EN/documents";
                 $("#co_message_errorCreated").show();
         }
     });
+}
+
+function ResetMessages(){
+  $("#co_message_loader_small").hide();
+  $("#co_message_contactCreated").hide();
+  $("#co_message_errorCreated").hide();
 }
 
 </script>

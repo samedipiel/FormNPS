@@ -46,6 +46,30 @@
 
 // FIN de código de números
 
+#co_message_contactCreated{
+    background: #e6f7e4;
+    color: #41b550;
+    width: 75%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 15px 0px;
+    border-radius: 5px;
+  }
+
+#co_message_errorCreated {
+    background: #ffe7e7;
+    color: #d64c4c;
+    width: 75%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 15px 0px;
+    border-radius: 5px;
+  }
+
+  .msc-alert-body {
+    flex-grow: 1;
+  }
+
 .btnEnviar{
     cursor: pointer;
     background: #02a5bf;
@@ -56,7 +80,7 @@
     border-radius: 10px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
-    margin: auto;
+    margin: 15px auto;
     text-transform: uppercase;
     color: #fff;
     justify-content: center;
@@ -80,7 +104,7 @@
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     font-family: 'Open Sans', sans-serif; font-weight:700;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     letter-spacing: 2px;
     line-height: 1.5;
     margin: 1rem 0;
@@ -142,9 +166,23 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     }
 }
 
+.labelPqrs{
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+}
+
+.btn-Pqrs{
+    background: #0d6472;
+}
 
 .movimientoEmoji > input:checked + label{
     color: #41b3c8;
+}
+
+.nps-container > input:checked + label{
+    background: #007e93;
+    font-weight: 700;
 }
 
 
@@ -169,8 +207,10 @@ p {
 }
 
 .seccionBotonera{
-    justify-content: center;
-    display: flex;
+    /*justify-content: center;
+    display: flex;*/
+    width: 70%;
+    margin: 0px auto;
 
     .btn-primary{
         margin: 0 15px;
@@ -234,13 +274,13 @@ p {
 
 .cajasCalificacion{
     justify-content: center;
-    flex-wrap: nowrap !important;
+    /*flex-wrap: nowrap !important;*/
 }
 
 .cajaMenu{
         justify-content: center;
         flex-wrap: nowrap !important;
-        width: 45%;
+        /*width: 45%;*/
     }
 
 
@@ -271,6 +311,10 @@ input[type="radio"]{
     border-radius: 2px;
 }
 
+.opt-in{
+    text-align: center;
+}
+
 .confirmacion__pedido label {
     padding: 5px 10px;
     margin: 5px 0px;
@@ -280,13 +324,34 @@ input[type="radio"]{
 }
 
 @media screen and (max-width: 768px) {
+
+    .confirmacion__pedido > input:checked + label {
+        width: 15%;
+        color: #fff;
+    }
+
+    .contenedor-formulario-1 .x-grid-col-50 {
+        padding: 0px;
+    }
+
+    .x-grid-row .x-grid-col-45 {
+        margin-right: 0px;
+    }
+
+    .x-grid-col-45.bordeCajas {
+        margin: 5px 0px;
+    }
+
     .seccionBotonera{
         justify-content: center;
         display: block;
-        width: 80%;
+        width: 90%;
         margin: 0px auto;
-        
-    
+
+        .x-grid-row .x-grid-col-25:not(.responsivent){
+            max-width: 45% !important;
+        }
+
         .btn-primary{
             margin: 5px;
             display: inline-block;
@@ -317,11 +382,25 @@ input[type="radio"]{
         border-bottom: none !important;
     }
 
+    .x-grid-row.cajaMenu {
+        display: block !important;
+    }
+
     input[type="radio"]{
         position: absolute;
         opacity: 0;
         width: 0;
         height: 0;
         cursor: pointer;
+    }
+
+    .opt-in {
+        margin: 0px 3px;
+    }
+
+    .cajasCalificacion .x-grid-row .x-grid-col-33:not(.responsivent) {
+        flex: 1 1 66.66%;
+        width: 33%;
+        max-width: 33%;
     }
   }
